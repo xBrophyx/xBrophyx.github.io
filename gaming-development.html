@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaming Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0d0c0b;
+      --ink: #f4f1ec;
+      --muted: #8c857c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Inter", system-ui, sans-serif;
+      color: var(--muted);
+      background: linear-gradient(135deg, #161412 0%, var(--bg) 55%, #0a0908 100%);
+    }
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 0.9rem;
+      opacity: 0.75;
+      transition: opacity 0.2s ease;
+    }
+    a:hover,
+    a:focus-visible { opacity: 1; }
+    .back {
+      position: fixed;
+      top: 1.25rem;
+      left: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <a class="back" href="index.html">&larr; Back</a>
+</body>
+</html>
