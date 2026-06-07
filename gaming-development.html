@@ -165,6 +165,26 @@
       transform: scale(1.04);
     }
 
+    .project__media--gradient {
+      display: flex;
+      align-items: flex-end;
+      padding: 1.25rem;
+      background:
+        radial-gradient(ellipse 70% 60% at 60% 25%, rgba(200, 90, 50, 0.28) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 45% at 15% 80%, rgba(90, 60, 120, 0.22) 0%, transparent 50%),
+        linear-gradient(155deg, #1a1412 0%, #0d0c0b 100%);
+    }
+
+    .project__glyph {
+      font-family: "Archivo", sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.5rem, 6vw, 3.5rem);
+      color: rgba(244, 241, 236, 0.12);
+      letter-spacing: 0.08em;
+      line-height: 1;
+      user-select: none;
+    }
+
     .project__status {
       position: absolute;
       top: 0.85rem;
@@ -325,14 +345,14 @@
       <span class="deco-line" aria-hidden="true"></span>
       <h1 class="showcase__title">Gaming Development</h1>
       <p class="showcase__lede">
-        Grand-strategy RTS prototypes blending army command, fleet control, and hybrid
-        FPS ground combat across factions and star systems.
+        Game prototypes spanning grand-strategy RTS, third-person FPS, and future MMO-scale
+        combat — built with TypeScript, Unity, and browser-first tooling.
       </p>
       <span class="deco-dots" aria-hidden="true"><i></i><i></i><i></i></span>
     </header>
 
     <section class="projects" aria-label="Game projects">
-      <article class="project project--featured reveal">
+      <article class="project reveal">
         <div class="project__media">
           <img
             src="https://github.com/user-attachments/assets/d789eeb1-97b9-4a67-bba4-ec5d33e59204"
@@ -358,6 +378,31 @@
           </p>
           <div class="project__links">
             <a class="project__link" href="https://github.com/x0205x/legion-stars" target="_blank" rel="noopener noreferrer">View repository</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project__media project__media--gradient">
+          <span class="project__glyph" aria-hidden="true">FPS</span>
+          <span class="project__status">In development</span>
+        </div>
+        <div class="project__body">
+          <ul class="project__tags">
+            <li>C#</li>
+            <li>Unity 6</li>
+            <li>URP</li>
+            <li>WebGL</li>
+          </ul>
+          <h2 class="project__name">FPS Game</h2>
+          <p class="project__desc">
+            A work-in-progress third-person FPS with RTS and future MMO ambitions — built on
+            Unity 6 LTS with URP, Cinemachine 3, and the Input System. Includes a cinematic
+            main menu, prologue test playground, and an exportable WebGL browser demo.
+          </p>
+          <div class="project__links">
+            <a class="project__link" href="https://github.com/x0205x/FPS-Game" target="_blank" rel="noopener noreferrer">View repository</a>
+            <a class="project__link" href="https://x0205x.github.io/FPS-Game/" target="_blank" rel="noopener noreferrer">Live demo</a>
           </div>
         </div>
       </article>
