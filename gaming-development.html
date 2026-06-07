@@ -165,40 +165,6 @@
       transform: scale(1.04);
     }
 
-    .project__media--gradient {
-      display: flex;
-      align-items: flex-end;
-      padding: 1.25rem;
-      background:
-        radial-gradient(ellipse 80% 70% at 70% 20%, rgba(180, 140, 90, 0.25) 0%, transparent 55%),
-        radial-gradient(ellipse 60% 50% at 20% 80%, rgba(90, 110, 160, 0.2) 0%, transparent 50%),
-        linear-gradient(160deg, #1a1816 0%, #0d0c0b 100%);
-    }
-
-    .project__media--aurora {
-      background:
-        radial-gradient(ellipse 70% 60% at 50% 30%, rgba(60, 120, 180, 0.3) 0%, transparent 55%),
-        radial-gradient(ellipse 50% 40% at 80% 70%, rgba(40, 80, 60, 0.25) 0%, transparent 50%),
-        linear-gradient(145deg, #121820 0%, #0a0c10 100%);
-    }
-
-    .project__media--ai {
-      background:
-        radial-gradient(ellipse 65% 55% at 40% 40%, rgba(140, 90, 200, 0.28) 0%, transparent 55%),
-        radial-gradient(ellipse 45% 40% at 75% 75%, rgba(90, 200, 180, 0.18) 0%, transparent 50%),
-        linear-gradient(155deg, #141218 0%, #0b0a0d 100%);
-    }
-
-    .project__glyph {
-      font-family: "Archivo", sans-serif;
-      font-weight: 800;
-      font-size: clamp(2.5rem, 6vw, 3.5rem);
-      color: rgba(244, 241, 236, 0.12);
-      letter-spacing: 0.08em;
-      line-height: 1;
-      user-select: none;
-    }
-
     .project__status {
       position: absolute;
       top: 0.85rem;
@@ -359,8 +325,8 @@
       <span class="deco-line" aria-hidden="true"></span>
       <h1 class="showcase__title">Gaming Development</h1>
       <p class="showcase__lede">
-        A growing collection of game projects — from grand-strategy RTS prototypes and
-        hybrid FPS combat to simulation tooling and AI-driven experiments.
+        Grand-strategy RTS prototypes blending army command, fleet control, and hybrid
+        FPS ground combat across factions and star systems.
       </p>
       <span class="deco-dots" aria-hidden="true"><i></i><i></i><i></i></span>
     </header>
@@ -395,59 +361,15 @@
           </div>
         </div>
       </article>
-
-      <article class="project reveal">
-        <div class="project__media project__media--gradient project__media--aurora">
-          <span class="project__glyph" aria-hidden="true">AURORA</span>
-          <span class="project__status">Tooling</span>
-        </div>
-        <div class="project__body">
-          <ul class="project__tags">
-            <li>HTML / JS</li>
-            <li>4X</li>
-            <li>Procedural</li>
-          </ul>
-          <h2 class="project__name">Aurora Milsim Generator</h2>
-          <p class="project__desc">
-            A content generator for Aurora-style military simulation campaigns — building
-            factions, orders of battle, and scenario data to jump-start long-form 4X sessions.
-          </p>
-          <div class="project__links">
-            <a class="project__link" href="https://github.com/x0205x/Aurora-Milsim-Generator" target="_blank" rel="noopener noreferrer">View repository</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project reveal">
-        <div class="project__media project__media--gradient project__media--ai">
-          <span class="project__glyph" aria-hidden="true">AI</span>
-          <span class="project__status">Concept</span>
-        </div>
-        <div class="project__body">
-          <ul class="project__tags">
-            <li>AI</li>
-            <li>Game design</li>
-            <li>Experimental</li>
-          </ul>
-          <h2 class="project__name">AI Game</h2>
-          <p class="project__desc">
-            An early-stage experiment exploring AI-assisted game creation — prototyping
-            mechanics, narrative beats, and player interactions with generative systems.
-          </p>
-          <div class="project__links">
-            <a class="project__link" href="https://github.com/x0205x/Ai-Game" target="_blank" rel="noopener noreferrer">View repository</a>
-          </div>
-        </div>
-      </article>
     </section>
 
     <footer class="showcase__footer reveal">
       <p>More prototypes and jam games live on the gaming GitHub profile.</p>
-      <a class="showcase__github" href="https://github.com/x0205x" target="_blank" rel="noopener noreferrer">
+      <a class="showcase__github" href="https://github.com/xBrophyx" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
         </svg>
-        @x0205x on GitHub
+        @xBrophyx on GitHub
       </a>
     </footer>
   </main>
